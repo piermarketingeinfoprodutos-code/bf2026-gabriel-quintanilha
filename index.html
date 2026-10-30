@@ -7,57 +7,44 @@
 <meta name="description" content="Aulão de Black Friday ao vivo com o Prof. Gabriel Quintanilha, 24/11, das 20h às 23h. O mapa das oportunidades consultivas e judiciais da reforma tributária.">
 <meta property="og:title" content="O Mapa das Oportunidades Tributárias de 2027 · Aulão de Black Friday">
 <meta property="og:description" content="24/11, das 20h às 23h, ao vivo com o Prof. Gabriel Quintanilha. Sem gravação.">
-<meta property="og:image" content="assets/gabriel-hero.webp">
+<meta property="og:image" content="assets/og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 32'%3E%3Cpath fill='%23C8231B' d='M12 0C5.4 0 0 5.2 0 11.7 0 20.5 12 32 12 32s12-11.5 12-20.3C24 5.2 18.6 0 12 0zm0 16.5a4.8 4.8 0 1 1 0-9.6 4.8 4.8 0 0 1 0 9.6z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Unbounded:wght@600;700;800;900&display=swap">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="preload" as="image" href="assets/mapa-escuro.webp">
+<link rel="stylesheet" href="style.css?v=4">
 <!-- Pixel da Meta / Google Tag: inserir aqui quando houver os IDs -->
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="pin" viewBox="0 0 24 32"><path d="M12 0C5.4 0 0 5.2 0 11.7 0 20.5 12 32 12 32s12-11.5 12-20.3C24 5.2 18.6 0 12 0zm0 16.5a4.8 4.8 0 1 1 0-9.6 4.8 4.8 0 0 1 0 9.6z"/></symbol></svg>
 
 <div class="strip">AULÃO DE BLACK FRIDAY · 24/11 · 20H ÀS 23H · <b data-lote-atual>1º lote R$ 47</b> encerra em <b data-timer-txt>--</b></div>
 
 <!-- 1. HERO -->
 <header class="hero">
-  <svg class="map" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <defs><pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#C3E911" stroke-opacity=".06"/></pattern></defs>
-    <rect width="1200" height="800" fill="url(#g)"/>
-    <path d="M40 700 C220 620 260 520 420 540 S640 660 760 520 S900 260 1120 150" fill="none" stroke="#C3E911" stroke-opacity=".35" stroke-width="3" stroke-dasharray="4 14" stroke-linecap="round"/>
-    <circle cx="1120" cy="150" r="10" fill="#C3E911" fill-opacity=".5"/>
-    <path d="M120 120 l18 0 M129 111 l0 18" stroke="#F5F1E8" stroke-opacity=".2" stroke-width="2"/>
-    <circle cx="980" cy="640" r="70" fill="none" stroke="#F5F1E8" stroke-opacity=".07" stroke-width="2"/>
-    <circle cx="980" cy="640" r="44" fill="none" stroke="#F5F1E8" stroke-opacity=".07" stroke-width="2"/>
-  </svg>
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <span class="selo"><i></i>24 de novembro · das 20h às 23h · ao vivo</span>
-      <div class="logo-ev">
-        <small>AULÃO DE BLACK FRIDAY</small>
-        <h1>O mapa das oportunidades <em>tributárias de 2027</em></h1>
-      </div>
+      <div class="marca"><svg class="pin-ico"><use href="#pin"/></svg>AULÃO DE <span>BLACK FRIDAY</span></div>
+      <div class="servico"><span>24 de novembro</span><i></i><span>20h às 23h</span><i></i><span class="vivo">Ao vivo</span></div>
+      <h1>O mapa das oportunidades <em>tributárias de 2027</em></h1>
       <p class="lead">A maior reforma tributária dos últimos 50 anos vai redesenhar a advocacia. Em três horas ao vivo, o Prof. Gabriel Quintanilha, 7 vezes consecutivas Best Lawyers, abre o mapa das oportunidades consultivas e judiciais que estão nascendo e mostra a rota para você chegar na frente, antes que todo mundo perceba o tamanho da onda.</p>
-      <div class="badges">
-        <span><b>Quase 20 anos</b> de advocacia</span>
-        <span>Professor e coordenador na <b>FGV</b></span>
-        <span>Autor do livro da <b>Reforma Tributária</b></span>
-        <span><b>Best Lawyers</b> 7× consecutivos</span>
+      <div class="cta-row">
+        <a class="btn" data-cta="Garantir meu ingresso" href="#ingressos">Garantir meu ingresso · 1º lote R$ 47</a>
+        <div class="timer"><span><span data-lote-atual>1º lote</span><br>encerra em</span><div class="t" data-timer></div></div>
       </div>
-      <a class="btn" data-cta="Garantir meu ingresso" href="#ingressos">Garantir meu ingresso · 1º lote R$ 47</a>
       <p class="cta-note">ou 12x de R$ 4,90*</p>
-      <div class="timer"><span><span data-lote-atual>1º lote</span> encerra em</span><div class="t" data-timer></div></div>
+      <div class="autoridade"><span>Professor e coordenador na <b>FGV</b></span><span>Autor do livro da <b>Reforma Tributária</b></span><span><b>Best Lawyers</b> 7× consecutivos</span></div>
       <p class="hero-note">Aulão de Black Friday: aula de verdade e, no fim, uma condição especial para quem quiser seguir com o Gabriel.</p>
     </div>
     <div class="hero-photo">
-      <span class="trail-tag a">2026</span>
-      <span class="trail-tag b">2027</span>
       <img src="assets/gabriel-hero.webp" alt="Prof. Gabriel Quintanilha" width="850" height="1350" fetchpriority="high">
     </div>
   </div>
 </header>
 
 <!-- 2. A VIRADA -->
-<section class="virada">
+<section class="virada mapa-bg esq">
   <div class="wrap split">
     <div>
       <span class="eyebrow">A virada</span>
@@ -80,11 +67,14 @@
 <!-- 3. POR QUE AGORA -->
 <section class="agora">
   <div class="wrap">
-    <span class="eyebrow" style="color:var(--lima)">Por que agora</span>
-    <p class="big" style="margin:14px 0 28px">2027 começa antes de janeiro.</p>
-    <div class="split">
-      <p>A nova onda tributária não vai pedir licença. Quando as empresas começarem a correr atrás de orientação, quem já estiver posicionado fica com os primeiros clientes, os melhores casos e a reputação de referência. Quem chegar depois disputa o que sobrou.</p>
-      <p>Na virada, ninguém tem anos de experiência com o sistema novo, nem quem advoga há décadas. É o raro momento em que quem se prepara antes larga na frente, independentemente de quanto tempo de carreira tem.</p>
+    <div class="agora-grid">
+      <div>
+        <span class="eyebrow" style="color:var(--lima)">Por que agora</span>
+        <p class="big">2027 começa antes de janeiro.</p>
+        <p>A nova onda tributária não vai pedir licença. Quando as empresas começarem a correr atrás de orientação, quem já estiver posicionado fica com os primeiros clientes, os melhores casos e a reputação de referência. Quem chegar depois disputa o que sobrou.</p>
+        <p>Na virada, ninguém tem anos de experiência com o sistema novo, nem quem advoga há décadas. É o raro momento em que quem se prepara antes larga na frente, independentemente de quanto tempo de carreira tem.</p>
+      </div>
+      <img class="cal" src="assets/calendario-2027.webp" alt="" width="760" height="545" loading="lazy">
     </div>
     <div class="quote-band">
       <strong>A nova onda tributária já começou. A pergunta é se você vai estar na frente dela.</strong>
@@ -94,18 +84,25 @@
 </section>
 
 <!-- 4. O MAPA DA NOITE -->
-<section class="mapa">
+<section class="mapa mapa-bg suave">
   <div class="wrap">
     <div class="head">
       <span class="eyebrow">O mapa da noite</span>
       <h2 style="margin-top:12px">A trilha que você vai percorrer em três horas</h2>
+      <p>Do ponto em que você está hoje até a proposta de honorários: cinco paradas, em sequência.</p>
     </div>
-    <div class="trilha">
-      <div class="marco"><span class="n">1</span><div class="c"><h3>Onde você está hoje</h3><p>O que a reforma muda para a advocacia e por que a maioria ainda não percebeu o tamanho da janela que está se abrindo.</p></div></div>
-      <div class="marco"><span class="n">2</span><div class="c"><h3>As oportunidades consultivas</h3><p>As frentes em que empresas vão precisar de orientação, e quais delas chegam primeiro.</p></div></div>
-      <div class="marco"><span class="n">3</span><div class="c"><h3>As oportunidades judiciais</h3><p>Onde nasce o contencioso da transição e quem vai precisar de defesa.</p></div></div>
-      <div class="marco"><span class="n">4</span><div class="c"><h3>Quem vai precisar de você</h3><p>Os perfis de cliente que vão procurar um tributarista em 2027, e como reconhecê-los.</p></div></div>
-      <div class="marco fim"><span class="n">5</span><div class="c"><h3>A rota até o primeiro contrato</h3><p>Como sair do conhecimento e chegar à proposta de honorários.</p></div></div>
+    <div class="rota" data-rota>
+      <svg class="linha" viewBox="0 0 1000 150" preserveAspectRatio="none" aria-hidden="true">
+        <path class="trilho" vector-effect="non-scaling-stroke" d="M0 132 C50 132 60 40 100 40 S250 110 300 110 S450 40 500 40 S650 110 700 110 S960 40 1000 40"/>
+        <path class="percorrido" pathLength="1" vector-effect="non-scaling-stroke" d="M0 132 C50 132 60 40 100 40 S250 110 300 110 S450 40 500 40 S650 110 700 110 S960 40 1000 40"/>
+      </svg>
+      <span class="marco-ext partida"><i></i>Partida · você hoje</span>
+      <div class="parada p1"><span class="n">1</span><div class="c"><h3>Onde você está hoje</h3><p>O que a reforma muda para a advocacia e por que a maioria ainda não percebeu o tamanho da janela que está se abrindo.</p></div></div>
+      <div class="parada p2"><span class="n">2</span><div class="c"><h3>As oportunidades consultivas</h3><p>As frentes em que empresas vão precisar de orientação, e quais delas chegam primeiro.</p></div></div>
+      <div class="parada p3"><span class="n">3</span><div class="c"><h3>As oportunidades judiciais</h3><p>Onde nasce o contencioso da transição e quem vai precisar de defesa.</p></div></div>
+      <div class="parada p4"><span class="n">4</span><div class="c"><h3>Quem vai precisar de você</h3><p>Os perfis de cliente que vão procurar um tributarista em 2027, e como reconhecê-los.</p></div></div>
+      <div class="parada p5"><span class="n">5</span><div class="c"><h3>A rota até o primeiro contrato</h3><p>Como sair do conhecimento e chegar à proposta de honorários.</p></div></div>
+      <span class="marco-ext chegada"><svg class="pin-ico"><use href="#pin"/></svg>Chegada · 2027</span>
     </div>
     <p class="rodape">Esta é a versão mais completa e atual do mapa, com tudo o que o Gabriel sabe hoje sobre a reforma.</p>
   </div>
@@ -113,14 +110,17 @@
 
 <!-- 5. CONVITE HONESTO -->
 <section class="convite">
-  <div class="wrap">
-    <span class="eyebrow" style="color:var(--lima)">O convite honesto</span>
-    <h2 style="margin-top:12px">Vai ter oferta? <span>Vai.</span><br>Vai ter enrolação? <span>Não.</span></h2>
-    <blockquote class="carta">
-      <p>"Eu vou ser direto com você. É um aulão de Black Friday, então no fim eu vou apresentar uma condição especial para quem quiser seguir comigo. Não vou esconder isso.</p>
-      <p>O que eu garanto é que, antes dela, você vai ter três horas de aula de verdade. Eu escrevi o livro da reforma e não coloco o meu nome numa aula vazia. Se você não comprar nada, sai com o mapa de 2027 na mão, e essa aula vai valer mais do que muito curso caro."</p>
-      <cite>— Prof. Gabriel Quintanilha</cite>
-    </blockquote>
+  <div class="wrap convite-grid">
+    <div>
+      <span class="eyebrow" style="color:var(--lima)">O convite honesto</span>
+      <h2 style="margin-top:12px">Vai ter oferta? <span>Vai.</span><br>Vai ter enrolação? <span>Não.</span></h2>
+      <blockquote class="carta">
+        <p>"Eu vou ser direto com você. É um aulão de Black Friday, então no fim eu vou apresentar uma condição especial para quem quiser seguir comigo. Não vou esconder isso.</p>
+        <p>O que eu garanto é que, antes dela, você vai ter três horas de aula de verdade. Eu escrevi o livro da reforma e não coloco o meu nome numa aula vazia. Se você não comprar nada, sai com o mapa de 2027 na mão, e essa aula vai valer mais do que muito curso caro."</p>
+        <cite>— Prof. Gabriel Quintanilha</cite>
+      </blockquote>
+    </div>
+    <div class="foto-moldura"><img src="assets/gabriel-convite.webp" alt="Prof. Gabriel Quintanilha" width="800" height="1201" loading="lazy"></div>
   </div>
 </section>
 
@@ -136,7 +136,7 @@
 </section>
 
 <!-- 7. PARA QUEM É -->
-<section class="quem">
+<section class="quem mapa-bg suave bordas">
   <div class="wrap">
     <span class="eyebrow">Para quem é (e para quem não é)</span>
     <div class="cols">
@@ -175,27 +175,31 @@
 </section>
 
 <!-- 9. O QUE VOCÊ LEVA -->
-<section class="leva">
+<section class="leva mapa-bg suave dir">
   <div class="wrap leva-grid">
+    <div class="bilhete">
+      <img src="assets/bilhete-dourado.webp" alt="" width="1000" height="690" loading="lazy">
+      <div class="info"><small>Ingresso · <span data-lote-nome>1º lote</span></small><strong data-lote-preco>R$ 47</strong><span data-lote-periodo>até 10/11</span></div>
+    </div>
     <div>
       <span class="eyebrow">O que você leva</span>
-      <p class="preco" style="margin-top:14px">R$ 47<small>no primeiro lote, até 10/11</small></p>
-      <a class="btn" style="margin-top:28px" data-cta="" href="#ingressos">Garantir meu ingresso</a>
+      <h2 style="margin-top:12px;font-size:clamp(26px,3.2vw,38px)">Por <span data-lote-preco>R$ 47</span> no <span data-lote-nome>1º lote</span>, você garante:</h2>
+      <ul>
+        <li>Três horas de aula ao vivo com o Prof. Gabriel Quintanilha</li>
+        <li>O mapa das oportunidades tributárias de 2027, consultivas e judiciais</li>
+        <li>Os perfis de cliente que vão procurar um tributarista</li>
+        <li>A rota do conhecimento até o primeiro contrato</li>
+        <li>Perguntas respondidas ao vivo</li>
+        <li>Acesso à condição de Black Friday apresentada só na aula</li>
+        <li>Grupo de avisos no WhatsApp com o link e os lembretes</li>
+      </ul>
+      <a class="btn" data-cta="" href="#ingressos">Garantir meu ingresso</a>
     </div>
-    <ul>
-      <li>Três horas de aula ao vivo com o Prof. Gabriel Quintanilha</li>
-      <li>O mapa das oportunidades tributárias de 2027, consultivas e judiciais</li>
-      <li>Os perfis de cliente que vão procurar um tributarista</li>
-      <li>A rota do conhecimento até o primeiro contrato</li>
-      <li>Perguntas respondidas ao vivo</li>
-      <li>Acesso à condição de Black Friday apresentada só na aula</li>
-      <li>Grupo de avisos no WhatsApp com o link e os lembretes</li>
-    </ul>
   </div>
 </section>
 
 <!-- 10. FAQ -->
-<section class="faq">
+<section class="faq mapa-bg suave bordas">
   <div class="wrap">
     <div style="text-align:center"><span class="eyebrow">Perguntas frequentes</span><h2 style="margin-top:12px">Antes de garantir o seu lugar</h2></div>
     <div class="faq-list">
@@ -215,7 +219,7 @@
   <div class="wrap">
     <h2>2027 começa <span>antes de janeiro.</span></h2>
     <p style="margin-top:18px">A nova onda tributária vai separar quem chegou primeiro de quem chegou depois. No dia 24 de novembro, você pode sair com o mapa na mão.</p>
-    <div class="timer" style="justify-content:center"><span><span data-lote-atual>1º lote</span> encerra em</span><div class="t" data-timer></div></div>
+    <div class="timer"><span><span data-lote-atual>1º lote</span> encerra em</span><div class="t" data-timer></div></div>
     <div class="lotes" data-lotes></div>
     <a class="btn" data-cta="Garantir meu ingresso" href="#ingressos">Garantir meu ingresso</a>
     <p class="ps"><b>P.S.:</b> Enquanto uns choram, outros emitem honorários. A reforma não vai esperar ninguém se sentir pronto. Garanta o seu lugar no aulão e veja, ao vivo, onde estão as oportunidades de 2027.</p>
@@ -223,17 +227,16 @@
 </section>
 
 <!-- 12. BIO -->
-<section class="bio">
+<section class="bio mapa-bg suave esq">
   <div class="wrap bio-grid">
-    <div class="bio-photo"><img src="assets/gabriel-professor.webp" alt="Prof. Dr. Gabriel Quintanilha" loading="lazy" width="899" height="1350"></div>
+    <div class="foto-moldura"><img src="assets/gabriel-professor.webp" alt="Prof. Dr. Gabriel Quintanilha" loading="lazy" width="899" height="1350"></div>
     <div>
       <span class="eyebrow">O guia desta trilha</span>
       <h2 style="margin:12px 0 18px">Prof. Dr. Gabriel Quintanilha</h2>
       <p>O Prof. Dr. Gabriel Quintanilha advoga em direito tributário há quase 20 anos. É professor e coordenador de Direito Tributário na FGV, escreveu o livro sobre a Reforma Tributária e foi reconhecido pelo <b>Best Lawyers por 7 anos consecutivos</b>.</p>
       <p>Enquanto muita gente virou "especialista em reforma" na semana passada, ele atua nela em casos reais, todos os dias, com cliente cobrando resultado. É por isso que ele consegue enxergar onde estão as oportunidades antes do mercado.</p>
-      <div class="badges">
-        <span>Quase 20 anos de advocacia</span><span>Professor e coordenador na FGV</span><span>Autor do livro da Reforma Tributária</span><span>Best Lawyers 7× consecutivos</span>
-      </div>
+      <div class="badges"><span>Quase 20 anos de advocacia</span><span>Professor e coordenador na FGV</span><span>Autor do livro da Reforma Tributária</span></div>
+      <div class="selos"><small>Best Lawyers · Lawyer of the Year · 7 anos consecutivos</small><img src="assets/best-lawyers-2020-2026.webp" alt="Selos Best Lawyers Lawyer of the Year de 2020 a 2026" width="1400" height="409" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -242,7 +245,9 @@
   <div class="wrap">Aulão de Black Friday do Expert em Tributário · Prof. Dr. Gabriel Quintanilha · 24/11, das 20h às 23h, ao vivo<br><a href="#">Política de privacidade</a> · <a href="#">Termos</a></div>
 </footer>
 
-<script src="config.js?v=2"></script>
-<script src="app.js?v=2"></script>
+<div class="mcta"><a class="btn" data-cta="" href="#ingressos">Garantir meu ingresso</a></div>
+
+<script src="config.js?v=4"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>
