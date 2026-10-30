@@ -314,3 +314,9 @@ footer a{color:#C9D3C4}
   .hero-photo img{top:14px;height:170%}
   .hero-copy{padding:0 0 28px}
 }
+/* v7 — obrigado: rota de 3 paradas */
+.rota.tres{grid-template-columns:repeat(3,1fr);column-gap:28px}
+.rota.tres .marco-ext.chegada{grid-column:3}
+.btn.mini{font-size:12px;padding:11px 16px;margin-top:12px;box-shadow:none}
+.rota.tres .parada .c{padding:20px 22px 22px}
+.marco-ext.chegada .pin-ico{fill:var(--pin)}.marca .pin-ico{fill:var(--ouro)}
