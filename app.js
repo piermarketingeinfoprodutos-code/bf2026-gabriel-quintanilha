@@ -28,7 +28,7 @@
         var bt = e === "on" ? "Garantir no " + l.nome.replace(" (último)", "") : e === "lock" ? abre(l) : "Encerrado";
         var tag = e === "on" ? "a" : "div";
         var href = e === "on" ? ' href="' + l.checkout + '"' : "";
-        return "<" + tag + ' class="lote ' + e + '"' + href + '><i class="cad"></i><b class="n">' + l.nome + " · " + l.periodo +
+        return "<" + tag + ' class="lote ' + e + '"' + href + '><img class="cad" alt="" src="assets/cadeado-' + (e === "on" ? "aberto" : "fechado") + '.webp" width="220" height="220"><b class="n">' + l.nome + " · " + l.periodo +
           '</b><span class="pv">' + l.preco + '</span><span class="pc">' + l.parcela + '</span><span class="bt">' + bt + "</span></" + tag + ">";
       }).join("");
     });
@@ -41,6 +41,10 @@
     document.querySelectorAll("[data-lote-atual]").forEach(function (el) {
       el.textContent = v < 0 ? "Encerrado" : C.lotes[v].nome.replace(" (último)", "") + " " + C.lotes[v].preco;
     });
+    var lv = C.lotes[v] || C.lotes[C.lotes.length - 1];
+    document.querySelectorAll("[data-lote-nome]").forEach(function (el) { el.textContent = lv.nome.replace(" (último)", ""); });
+    document.querySelectorAll("[data-lote-preco]").forEach(function (el) { el.textContent = lv.preco; });
+    document.querySelectorAll("[data-lote-periodo]").forEach(function (el) { el.textContent = lv.periodo; });
     document.querySelectorAll("[data-proximo]").forEach(function (el) {
       var p = C.lotes[v + 1];
       el.textContent = p ? "Depois, o ingresso sobe para " + p.preco + " e não volta." : "Último lote: as vendas encerram no início da aula.";
@@ -66,6 +70,25 @@
   var renderLotesCache = renderLotes();
   tick();
   setInterval(tick, 1000);
+
+  // rota do mapa: desenha quando entra na tela
+  var rota = document.querySelector("[data-rota]");
+  if (rota && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (es, ob) {
+      es.forEach(function (e) { if (e.isIntersecting) { rota.classList.add("on"); ob.disconnect(); } });
+    }, { threshold: 0.35 }).observe(rota);
+  } else if (rota) rota.classList.add("on");
+
+  // CTA fixo no celular depois da primeira dobra
+  var mcta = document.querySelector(".mcta"), hero = document.querySelector(".hero"), ing = document.getElementById("ingressos");
+  if (mcta && hero) {
+    var upd = function () {
+      var r = hero.getBoundingClientRect(), ri = ing ? ing.getBoundingClientRect() : null;
+      var noIngresso = ri && ri.top < innerHeight && ri.bottom > 0;
+      mcta.classList.toggle("show", r.bottom < 0 && !noIngresso);
+    };
+    addEventListener("scroll", upd, { passive: true }); upd();
+  }
 
   document.querySelectorAll("[data-grupo]").forEach(function (a) { a.href = C.grupoWhatsApp; });
 })();
