@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Pier Marketing//Aulao BF 2026//PT
+BEGIN:VEVENT
+UID:aulao-gabriel-bf2026@piermarketing
+DTSTAMP:20261030T000000Z
+DTSTART:20261124T230000Z
+DTEND:20261125T020000Z
+SUMMARY:Aulão de Black Friday · O Mapa das Oportunidades Tributárias de 2027
+DESCRIPTION:Aulão ao vivo com o Prof. Gabriel Quintanilha. O link da aula chega pelo grupo de avisos no WhatsApp. Não vai ter gravação.
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:O aulão começa em 1 hora
+END:VALARM
+END:VEVENT
+END:VCALENDAR
