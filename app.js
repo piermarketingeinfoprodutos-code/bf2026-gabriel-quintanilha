@@ -44,6 +44,7 @@
     var lv = C.lotes[v] || C.lotes[C.lotes.length - 1];
     document.querySelectorAll("[data-lote-nome]").forEach(function (el) { el.textContent = lv.nome.replace(" (último)", ""); });
     document.querySelectorAll("[data-lote-preco]").forEach(function (el) { el.textContent = lv.preco; });
+    document.querySelectorAll("[data-lote-parcela]").forEach(function (el) { el.textContent = lv.parcela; });
     document.querySelectorAll("[data-lote-periodo]").forEach(function (el) { el.textContent = lv.periodo; });
     document.querySelectorAll("[data-proximo]").forEach(function (el) {
       var p = C.lotes[v + 1];
