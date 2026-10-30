@@ -1,0 +1,27 @@
+PÁGINA DO INGRESSO + PÁGINA DE OBRIGADO — GABRIEL QUINTANILHA · AULÃO DE BLACK FRIDAY 2026
+Site estático (HTML + CSS + JS). Não precisa instalar nada.
+
+ESTRUTURA
+- index.html ............ página de venda do ingresso
+- obrigado/index.html ... página de obrigado (configurar como redirecionamento pós-compra nos 3 checkouts)
+- style.css ............. visual (identidade padrão Black Friday Pier)
+- app.js ................ troca automática dos lotes por data + contadores
+- config.js ............. ÚNICO ARQUIVO A EDITAR: links de checkout dos 3 lotes, link do grupo, datas
+- assets/ ............... fotos e arquivo de agenda (.ics)
+
+COMO EDITAR OS LINKS
+Abra config.js e troque:
+  #CHECKOUT-LOTE-1 / #CHECKOUT-LOTE-2 / #CHECKOUT-LOTE-3 -> links reais de checkout
+  #LINK-DO-GRUPO-DE-AVISOS -> link do grupo de WhatsApp
+Depois de editar, aumente o número ?v=2 nos arquivos HTML (ex.: ?v=3) para o navegador não usar a versão antiga.
+
+LOTES (horário de Brasília)
+1º lote R$ 47 até 10/11 23h59 · 2º lote R$ 57 de 11/11 a 17/11 · 3º lote R$ 67 de 18/11 até 24/11 20h.
+Para testar outra data: adicione ?agora=2026-11-12T10:00:00-03:00 no fim do endereço.
+
+PIXEL / TAG
+Inserir no <head> das duas páginas (há um comentário marcando o lugar). Purchase dispara na página de obrigado.
+
+PUBLICAÇÃO (Hostinger / agência Lura)
+Subir o conteúdo desta pasta inteira (sem o .zip) para a pasta do domínio, por ex. expertemtributario.com.br/black-friday/
+A página de obrigado fica em /black-friday/obrigado/
